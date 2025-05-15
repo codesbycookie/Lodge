@@ -535,12 +535,11 @@ img{
 
 .testimonial-slider {
   max-width: 600px;
+  height: fit-content;
   margin: 40px auto;
   font-family: 'Georgia', serif;
-  background: #f9f9f9;
   padding: 30px 40px;
-  border-radius: 6px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  cursor: pointer;
 }
 
 .testimonial-slider blockquote {
@@ -550,7 +549,10 @@ img{
   color: #333;
   font-style: italic;
   position: relative;
-  padding-left: 30px;
+}
+
+.testimonial-slider ol {
+  display: none;
 }
 
 .testimonial-slider blockquote:before {
@@ -789,14 +791,26 @@ height: auto
 @media screen and (max-width: 992px) {
   #fh5co-slider-wrwap .flexslider .slider-text-bg .desc {
     background: #000;
+    color: white !important;
   }
+
+    #fh5co-slider-wrwap .flexslider .slider-text-bg .desc p{
+      color: white !important
+    }
+
 }
 #fh5co-slider-wrwap .flexslider .slider-text-bg .desc h2 {
   color: #fff !important;
 }
+
+.desc p {
+  color: black;
+}
+
 @media screen and (max-width: 768px) {
-  #fh5co-slider-wrwap .flexslider .slider-text-bg .desc p {
+  .desc p {
     display: none;
+    color: white !important
   }
 }
 #fh5co-slider-wrwap .flexslider .slider-text,
