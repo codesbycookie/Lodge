@@ -333,4 +333,17 @@
 	});
 
 
+  $(window).on('load', function() {
+    $('.testimonial-slider').flexslider({
+      animation: "slide",
+      controlNav: true,
+      directionNav: true,
+      slideshowSpeed: 5000,
+      animationSpeed: 600,
+      pauseOnHover: true,
+      smoothHeight: true,
+    });
+  });
+
+
 }());
