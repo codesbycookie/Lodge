@@ -480,12 +480,19 @@ a {
 }
 #Intro-btn{
   border-color: #3dbf26;
+  font-weight: bold;
 
 }
 #Intro-btn:hover{
   background: #3dbf26 !important;
   color: #fff !important;
   border-color: #3dbf26 !important;
+}
+#Intro-btn:active{
+  background: #3dbf26 !important;
+  color: #fff !important;
+  border-color: #3dbf26 !important;
+  scale: 1.1;
 }
 #cookie-header .display-tc .btn:hover,
 .cookie-cover .display-tc .btn:hover {
@@ -1723,8 +1730,8 @@ height: auto
   border: 2px solid #3dbf26;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #ec3e44 !important;
-  border-color: #ec3e44 !important;
+  background: #3dbf26 !important;
+  border-color: #3dbf26 !important;
 }
 .btn-primary.btn-outline {
   -webkit-border-radius: 0px;
