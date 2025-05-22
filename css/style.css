@@ -552,9 +552,46 @@ img{
   object-fit: cover;
 }
 
+.cookie-navagraha {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f9f9f9; /* optional background */
+  box-sizing: border-box;
+}
+
+.nava-img {
+  width: 100%;
+  max-width: 600px; /* adjusts based on your design */
+  height: auto;
+  border-radius: 12px; /* optional rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* optional shadow */
+  transition: transform 0.3s ease-in-out;
+}
+
+.nava-img:hover {
+  transform: scale(1.02); /* subtle hover effect */
+}
+
+/* Optional: Mobile adjustments */
+@media (max-width: 600px) {
+  .cookie-navagraha {
+    padding: 0.5rem;
+  }
+
+  .nava-img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+}
+
+
 .testimonial-slider {
   max-width: 600px;
-  height: fit-content;
+  height: 300px !important;
   margin: 40px auto;
   font-family: 'Georgia', serif;
   padding: 30px 40px;
@@ -568,6 +605,11 @@ img{
   color: #333;
   font-style: italic;
   position: relative;
+
+}
+
+.flex-viewport {
+  height: 500px !important;
 }
 
 .testimonial-slider ol {
@@ -584,7 +626,7 @@ img{
 }
 
 .testimonial-slider footer {
-  margin-top: 15px;
+  margin-top: 30px;
   font-weight: bold;
   font-style: normal;
   color: black;
@@ -595,7 +637,6 @@ img{
 .testimonial-slider p {
   color: black !important;
   font-size: 20px !important;
-  height: 150px;
 }
 
 .testimonial-slider a {
